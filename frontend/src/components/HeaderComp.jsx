@@ -13,19 +13,17 @@ export default class HeaderComp extends Component {
     return (
       <Paper elevation={3}>
         <header margin={20}>
-          <nav className=" navbar-expand-md navbar-dark bg-primary navbar-right px-3 ">
+          <nav className=" navbar-expand-md navbar-dark bg-warning navbar-right px-3 ">
             <h1 className="navbar-brand">Nathan Morgenrood - Curriculum Vitae</h1>
           </nav>
-
           <Navbar
             className="navbar-right"
             bg="dark"
-            variant="dark"
           >
-            <Nav className="navbar-right px-3">
+            <Link Nav className="navbar-right px-3">
               <Link to="/"> About</Link>
-            </Nav>
-            <Nav className="navbar-right px-3">
+            </Link>
+            <Nav className="navbar-right px-3 ">
               <Link to="/Portfolio"> Portfolio</Link>
             </Nav>
             <Nav className="navbar-right px-3 ms-auto ">
