@@ -14,7 +14,7 @@ export default class HeaderComp extends Component {
       <Paper elevation={3}>
         <header margin={20}>
           <nav className=" navbar-expand-md navbar-dark bg-primary navbar-right px-3 ">
-            <h1 className="navbar-brand">Photo Nest</h1>
+            <h1 className="navbar-brand">Nathan Morgenrood - Curriculum Vitae</h1>
           </nav>
 
           <Navbar
@@ -23,16 +23,13 @@ export default class HeaderComp extends Component {
             variant="dark"
           >
             <Nav className="navbar-right px-3">
-              <Link to="/users"> Manage Users</Link>
+              <Link to="/"> About</Link>
             </Nav>
             <Nav className="navbar-right px-3">
-              <Link to="/photos"> Manage Photos</Link>
-            </Nav>
-            <Nav className="nav-item navbar-right px-3">
-              <Link to="/share"> Share</Link>
+              <Link to="/Portfolio"> Portfolio</Link>
             </Nav>
             <Nav className="navbar-right px-3 ms-auto ">
-              <Link to="/login"> Log Out</Link>
+              <Link to="/Contact_Me"> Contact Me</Link>
             </Nav>
           </Navbar>
         </header>
