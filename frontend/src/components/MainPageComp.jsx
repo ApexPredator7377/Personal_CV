@@ -1,11 +1,6 @@
-import React, { Component, useState } from "react";
-import RestorePageIcon from "@mui/icons-material/RestorePage";
-import LoginIcon from "@mui/icons-material/Login";
-import { Container, Button, Paper } from "@mui/material";
-import Card from "@mui/material/Card";
-import FormGroup from "@mui/material/FormGroup";
+import React, { Component } from "react";
 
-export default class UserLoginComp extends Component {
+export default class MainPageComp extends Component {
   constructor(props) {
     super(props);
 
@@ -13,85 +8,38 @@ export default class UserLoginComp extends Component {
   }
 
   initialState = {
-    email: "",
-    password: "",
+
   };
 
-  resetLoginForm = () => {
-    this.setState(() => this.initialState);
-  };
-
-  credentialChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
-  };
 
   render() {
-    const { email, password } = this.state;
-
     return (
-      <div>
-        <h2 className="justify-content-center p-4 div">
-          <Paper style={{ display: "inline-block" }} width="20%">
-            <h2 className="div justify-content-center p-4 ">CV </h2>
-            <div>
-              <Card style={{ display: "inline-block" }}>
-                <div>
-                  <FormGroup>
-                    <div>
-                      <input Width="10%" className>
-                      </input>
-                      <FormGroup
-                        required
-                        autoComplete="off"
-                        type="text"
-                        name="email"
-                        value={this.email}
-                        className={"bg-dark text-white"}
-                        placeholder="Enter Email Address"
-                      />
-                    </div>
-                  </FormGroup>
-                </div>
-
-                <FormGroup>
-                  <div>
-                    <input Width="10%"></input>
-                    <FormGroup
-                      required
-                      autoComplete="off"
-                      type="password"
-                      name="password"
-                      value={this.password}
-                      className={"bg-dark text-white"}
-                      placeholder="Enter Password"
-                    />
-                  </div>
-                </FormGroup>
-              </Card>
+      <><div class="about-section">
+        <h1>About</h1>
+          <div class="column">
+            <div class="card">
+            <img
+                className="div"
+                style={{
+                  height: this.imageHeight,
+                  width: this.imageWidth,
+                  aspectRatio: 16 / 9,
+                }}
+                src={
+                  this.state.viewImage ||
+                  "https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Me.jpeg?alt=media&token=ad3802a8-4316-426d-a076-e1609f9c5956"
+                }
+              />
             </div>
-            <Button
-              size="sm"
-              type="button"
-              variant="success"
-              startIcon={<LoginIcon />}
-              onClick={() => {
-                this.props.history.push("/users");}}
-            >
-              Submit
-            </Button>{" "}
-            <Button
-              size="sm"
-              type="button"
-              variant="info"
-              startIcon={<RestorePageIcon />}
-            >
-              Clear
-            </Button>
-          </Paper>
-        </h2>
+            <div class="container">
+        <h2>Nathan Morgenrood</h2>
+        <p class="title">Software developer</p>
+        <p>Describes me ...</p>
+        <p>Nathan333nm@gmail.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
+          </div>
+        </div></>
     );
   }
 }
