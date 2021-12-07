@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
@@ -95,7 +96,8 @@ export default class ContactComp extends Component {
         </div>
         </div>
 
-    
+        {/* <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/> */}
+
         <p></p>
       </>
     )
