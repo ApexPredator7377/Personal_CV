@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import TextAnimation from 'react-animate-text';
 import { Link } from "react-router-dom";
 import ReactImageAppear from 'react-image-appear';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
@@ -48,10 +51,10 @@ export default class ContactComp extends Component {
                 <ul>
                 
                     <li> Email: <ButtonMailto label="Nathan333nm@gmail.com" mailto="mailto:Nathan333nm@gmail.com" /> </li>
-                    <li> Tel: <a href="el:0713865361">0713865361 </a> </li>
-                    <li> Learn Angular 4 from Scratch </li>
-                    <li> Learn the Basics of React (Incl Hooks - 2021) </li>
-                    <li> Microsoft Azure for Beginners </li>
+                    <li> Tel: <a href="tel:0713865361">0713865361 </a> </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
 
                 </ul>
             </TextAnimation>
@@ -60,7 +63,7 @@ export default class ContactComp extends Component {
         </div>
         </div>
 
-            
+    
         <p></p>
       </>
     )
