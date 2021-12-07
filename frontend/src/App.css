@@ -55,11 +55,20 @@ a {
   text-align: center;
 }
 
-.div {
+.div-mainImage {
   padding-top: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
   max-width: 900px;
+  height: auto;
+  width: auto;
+}
+
+.div-contactImage {
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  max-width: 450px;
   height: auto;
   width: auto;
 }

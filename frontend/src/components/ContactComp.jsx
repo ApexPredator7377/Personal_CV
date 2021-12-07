@@ -1,141 +1,105 @@
 import React, { Component } from "react";
-import UserService from "../services/UserService";
+import TextAnimation from 'react-animate-text';
+import { Link } from "react-router-dom";
+import ReactImageAppear from 'react-image-appear';
+import { Button } from "@mui/material";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-export default class CreateUserComponent extends Component {
+const ButtonMailto = ({ mailto, label }) => {
+  return (
+      <Link
+          to='#'
+          onClick={(e) => {
+              window.location = mailto;
+              e.preventDefault();
+          }}
+      >
+          {label}
+      </Link>
+  );
+};
+
+export default class ContactComp extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-
-    };
-
-    this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
-    this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
-    this.changeUserTypeHandler = this.changeUserTypeHandler.bind(this);
-    this.changeEmailHandler = this.changeEmailHandler.bind(this);
-    this.changeUserPasswordHandler = this.changeUserPasswordHandler.bind(this);
-    this.saveHandler = this.saveHandler.bind(this);
-    this.returnHandler = this.returnHandler.bind(this);
-  }
-
-  saveHandler = (sU) => {
-    sU.preventDefault();
-    let user = {
-      firstName: this.state.firstName,
-      lastName: this.state.lastName,
-      userType: this.state.userType,
-      email: this.state.email,
-      userPassword: this.state.userPassword,
-    };
-    console.log("user=> " + JSON.stringify(user));
-
-    UserService.createUser(user).then((res) => {
-      this.props.history.push("/users");
-    });
-  };
-
-  changeFirstNameHandler(event) {
-    this.setState({ firstName: event.target.value });
-  }
-
-  changeLastNameHandler(event) {
-    this.setState({ lastName: event.target.value });
-  }
-
-  changeUserTypeHandler(event) {
-    this.setState({ userType: event.target.value });
-  }
-
-  changeEmailHandler(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  changeUserPasswordHandler(event) {
-    this.setState({ userPassword: event.target.value });
-  }
-
-  returnHandler() {
-    this.props.history.push("/users");
+    this.state = {}
   }
 
   render() {
     return (
-      <div>
-        <div className="container p-5">
-          <div className="row">
-            <div class="card col-md-6 ofsett-md-3 offset-md-3">
-              <h3 className="text-centre p-2 div"> Add User </h3>
-              <div className="card-body">
-                <form>
-                  <div className="form-group">
+      <><div class="contact-section">
+        <p></p>
+        <h1>Contact Me</h1>
+        <p></p>
+        <div class="flex-container">
 
-                    <label>First Name: </label>
-                    <input
-                      placeholder="E.g. Tony"
-                      name="firstName"
-                      className="form-control"
-                      value={this.state.firstName}
-                      onChange={this.changeFirstNameHandler}
-                    />
-
-                    <label>Last Name: </label>
-                    <input
-                      placeholder="E.g. Stark"
-                      name="lastName"
-                      className="form-control"
-                      value={this.state.lastName}
-                      onChange={this.changeLastNameHandler}
-                    />
-
-                    <label>User Type: </label>
-                    <input
-                      placeholder="E.g. 'a'- Admin, 'u'- User"
-                      name="userType"
-                      className="form-control"
-                      value={this.state.userType}
-                      onChange={this.changeUserTypeHandler}
-                    />
-
-                    <label>Email Address: </label>
-                    <input
-                      placeholder="E.g. TonyStark@gmail.com"
-                      name="email"
-                      className="form-control"
-                      value={this.state.email}
-                      onChange={this.changeEmailHandler}
-                    />
-
-                    <label>Password: </label>
-                    <input
-                      autocomplete="off"
-                      placeholder="E.g. 1Am1r0nMan"
-                      name="userPassword"
-                      className="form-control"
-                      value={this.state.userPassword}
-                      onChange={this.changeUserPasswordHandler}
-                    />
-
-                  </div>
-                  <button
-                    className="btn btn-success m-2"
-                    onClick={this.saveHandler}
-                  >
-                    Save
-                  </button>
-
-                  <button
-                    className="btn btn-danger m-2"
-                    onClick={this.returnHandler.bind(this)}
-                    style={{ marginLeft: "10px" }}
-                  >
-                    Return
-                  </button>
-                </form>
-              </div>
+            <div class="flex-child">
+            <ReactImageAppear
+                className="div-contactImage"
+                src="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/MeAgain.jpg?alt=media&token=923e283a-7f53-4a18-82be-cf07522cf8f2"
+                loaderStyle={{ height: "125px",
+                               width: "125px" }}
+                loader="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Loading.gif?alt=media&token=b3b15e0f-c4fe-4720-b24f-1271b39afaa7"
+                animation="zoomIn"
+                animationDuration="1s"
+            />
             </div>
-          </div>
+  
+            <div class="flex-child">
+            <TextAnimation charInterval="40" ><p class="title"><b>o	Contact Details</b></p>
+                <ul>
+                
+                    <li> Email: <ButtonMailto label="Nathan333nm@gmail.com" mailto="mailto:Nathan333nm@gmail.com" /> </li>
+                    <li> Tel: <a href="tel:0713865361">0713865361 </a> </li>
+
+                </ul>
+
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<FacebookIcon />}
+                        onClick={() => {
+                          window.open("https://www.facebook.com/profile.php?id=100008799936212", "_blank")
+                        }}
+                      >
+                        Facebook
+                </Button>
+                
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<InstagramIcon />}
+                        onClick={() => {
+                          window.open("https://www.instagram.com/kuber_komkommer/?hl=en", "_blank")
+                        }}
+                      >
+                        Instagram
+                </Button>
+
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<GitHubIcon />}
+                        onClick={() => {
+                          window.open("https://github.com/ApexPredator7377", "_blank")
+                        }}
+                      >
+                        Github
+                </Button>
+
+            </TextAnimation>
+            </div>
+  
         </div>
-      </div>
-    );
+        </div>
+
+        {/* <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/> */}
+
+        <p></p>
+      </>
+    )
   }
 }

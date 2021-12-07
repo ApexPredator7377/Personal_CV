@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactImageAppear from 'react-image-appear';
 import TextAnimation from 'react-animate-text';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class MainPageComp extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export default class MainPageComp extends Component {
           <div class="column">
             <div class="card">
             <ReactImageAppear
-                className="div"
+                className="div-mainImage"
                 src="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Me.jpeg?alt=media&token=ad3802a8-4316-426d-a076-e1609f9c5956"
                 loaderStyle={{ height: "125px",
                                width: "125px" }}

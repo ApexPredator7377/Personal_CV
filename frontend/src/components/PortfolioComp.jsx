@@ -102,7 +102,7 @@ export default class PortfolioComp extends Component {
 
         <h2>Education</h2>
             <TextAnimation charInterval="40" ><p class="title"><b>o	Degree</b></p>
-                <p>BSc Information Technology/Computer Science at the Nort-West University</p></TextAnimation>
+                <p>BSc Information Technology/Computer Science at the North-West University</p></TextAnimation>
             <TextAnimation charInterval="40" ><p class="title"><b>o	Badges and Certificates</b></p>
                 <a href="https://www.udemy.com/user/nathan-morgenrood/" rel="noreferrer"><b>Udemy</b></a>
                 <ul>
