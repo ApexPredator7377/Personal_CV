@@ -12,7 +12,7 @@ export default class FooterComp extends Component {
       <Paper elevation={3}>
         <div>
           <footer className="footer">
-            <span className="text-muted"> All Rights Reserved 2021 @PhotoNest</span>
+            <span className="text-muted"> All Rights Reserved 2021 @Nathan Morgenrood</span>
           </footer>
         </div>
       </Paper>
