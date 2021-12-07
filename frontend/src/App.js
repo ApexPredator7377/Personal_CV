@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MainPageComp from "./components/MainPageComp";
+import PortfolioComp from "./components/PortfolioComp";
+
 import FooterComp from "./components/FooterComp";
 import HeaderComp from "./components/HeaderComp";
 import ManageUserComp from "./components/ManageUserComp";
@@ -20,7 +22,9 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/" exact component={MainPageComp}></Route>
-            {/* <Route path="/login" exact component={UserLoginComp}></Route> */}
+            <Route path="/Portfolio" exact component={PortfolioComp}></Route>
+
+            
             <Route path="/users" component={ManageUserComp}></Route>
             <Route path="/add_user" component={AddUserComp}></Route>
             <Route path="/update_users/:id" component={UpdateUserComp}></Route>

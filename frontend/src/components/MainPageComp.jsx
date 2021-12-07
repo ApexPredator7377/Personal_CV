@@ -19,9 +19,9 @@ export default class MainPageComp extends Component {
             <ReactImageAppear
                 className="div"
                 src="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Me.jpeg?alt=media&token=ad3802a8-4316-426d-a076-e1609f9c5956"
-                loaderStyle={{ height: "150px",
-                               width: "150px" }}
-                loader="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Dual%20Ball-1s-200px.gif?alt=media&token=6a4e8e2c-09d1-4606-b72b-0616dccff423"
+                loaderStyle={{ height: "125px",
+                               width: "125px" }}
+                loader="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Loading.gif?alt=media&token=b3b15e0f-c4fe-4720-b24f-1271b39afaa7"
                 animation="zoomIn"
                 animationDuration="1s"
             />
