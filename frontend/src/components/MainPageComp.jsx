@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactImageAppear from 'react-image-appear';
 import TextAnimation from 'react-animate-text';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class MainPageComp extends Component {
   constructor(props) {

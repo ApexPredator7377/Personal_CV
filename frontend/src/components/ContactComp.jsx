@@ -38,7 +38,7 @@ export default class ContactComp extends Component {
             <div class="flex-child">
             <ReactImageAppear
                 className="div-contactImage"
-                src="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/MeAlso.jpeg?alt=media&token=abe2f9f3-aa10-4c93-b9b3-b74633f28493"
+                src="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/MeAgain.jpg?alt=media&token=923e283a-7f53-4a18-82be-cf07522cf8f2"
                 loaderStyle={{ height: "125px",
                                width: "125px" }}
                 loader="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/Loading.gif?alt=media&token=b3b15e0f-c4fe-4720-b24f-1271b39afaa7"
