@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TextAnimation from 'react-animate-text';
 import { Link } from "react-router-dom";
 import ReactImageAppear from 'react-image-appear';
+import { Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -52,11 +53,42 @@ export default class ContactComp extends Component {
                 
                     <li> Email: <ButtonMailto label="Nathan333nm@gmail.com" mailto="mailto:Nathan333nm@gmail.com" /> </li>
                     <li> Tel: <a href="tel:0713865361">0713865361 </a> </li>
-                    <li>  </li>
-                    <li>  </li>
-                    <li>  </li>
 
                 </ul>
+
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<FacebookIcon />}
+                        onClick={() => {
+                          window.open("https://www.facebook.com/profile.php?id=100008799936212", "_blank")
+                        }}
+                      >
+                        Facebook
+                </Button>
+                
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<InstagramIcon />}
+                        onClick={() => {
+                          window.open("https://www.instagram.com/kuber_komkommer/?hl=en", "_blank")
+                        }}
+                      >
+                        Instagram
+                </Button>
+
+                <Button
+                        style={{ marginLeft: "10px" }}
+                        variant="contained"
+                        startIcon={<GitHubIcon />}
+                        onClick={() => {
+                          window.open("https://github.com/ApexPredator7377", "_blank")
+                        }}
+                      >
+                        Github
+                </Button>
+
             </TextAnimation>
             </div>
   
