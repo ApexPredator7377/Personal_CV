@@ -153,13 +153,12 @@ export default class PortfolioComp extends Component {
             <TextAnimation charInterval="40" ><p class="title"><b>o	External</b></p>
             <ul>
                 
-                <li>I have created and published, and is still maintaining and hosting a Wordpress website.</li>
+                <li>I have created and published, and is still maintaining and hosting a WordPress website.</li>
                 <li>I worked at a local gun shop during my off-time for about two months, where I also acquired experience in working with people, managing stock and sales.</li>
 
             </ul></TextAnimation>
             <p></p>
-
-        <Link to="/files/TEST.pdf" target="_blank" download><h2>Download CV</h2></Link>
+            <a href="https://firebasestorage.googleapis.com/v0/b/cv-nathan.appspot.com/o/CV.pdf?alt=media&token=b7791fcc-21df-463f-ae6e-14fa7f8bf7b0" rel="noreferrer"><h2> Download CV</h2></a>
         <p></p>
       </>
     )

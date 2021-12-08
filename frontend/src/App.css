@@ -26,10 +26,6 @@
   }
 }
 
-a {
-  color: #fff;
-}
-
 .flex-container {
   display: flex;
 }
@@ -71,10 +67,6 @@ a {
   max-width: 450px;
   height: auto;
   width: auto;
-}
-
-p {
-  margin-top: -20px;
 }
 
 .divUpload {
