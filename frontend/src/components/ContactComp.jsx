@@ -23,9 +23,11 @@ const ButtonMailto = ({ mailto, label }) => {
 };
 
 export default class ContactComp extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
+  constructor() {
+    super();
+    this.state = {
+      input:{}
+    };
   }
 
   render() {
@@ -96,8 +98,21 @@ export default class ContactComp extends Component {
         </div>
         </div>
 
-        <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/>
-
+        {/* <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/> */}
+        <ul>
+                    <li style={{ color: 'white' }}>.</li>
+                    <li style={{ color: 'white' }}>.</li>
+                    <li style={{ color: 'white' }}>.</li>
+                    <li style={{ color: 'white' }}>.</li>
+                    <li style={{ color: 'white' }}>.</li>
+        </ul>
+             
+              <button
+                    onClick={() => {
+                        window.open("/Admin")
+                    }}
+                  >
+                  </button>
         <p></p>
       </>
     )
