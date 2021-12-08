@@ -29,6 +29,9 @@ export default class HeaderComp extends Component {
             <Nav className="navbar-right px-3 ms-auto ">
               <Link to="/Contact_Me"> Contact Me</Link>
             </Nav>
+            <Nav className="navbar-right px-3 ">
+              <Link to="/Admin"> _</Link>
+            </Nav>
           </Navbar>
         </header>
       </Paper>

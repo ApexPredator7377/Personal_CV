@@ -99,20 +99,6 @@ export default class ContactComp extends Component {
         </div>
 
         {/* <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/> */}
-        <ul>
-                    <li style={{ color: 'white' }}>.</li>
-                    <li style={{ color: 'white' }}>.</li>
-                    <li style={{ color: 'white' }}>.</li>
-                    <li style={{ color: 'white' }}>.</li>
-                    <li style={{ color: 'white' }}>.</li>
-        </ul>
-             
-              <button
-                    onClick={() => {
-                        window.open("/Admin")
-                    }}
-                  >
-                  </button>
         <p></p>
       </>
     )
