@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HeaderComp from "./components/HeaderComp";
+import AdminComp from "./components/AdminComp";
 import MainPageComp from "./components/MainPageComp";
 import PortfolioComp from "./components/PortfolioComp";
 import ContactComp from "./components/ContactComp";
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" exact component={MainPageComp}></Route>
             <Route path="/Portfolio" exact component={PortfolioComp}></Route>
             <Route path="/Contact_Me" exact component={ContactComp}></Route>
+            <Route path="/Admin" exact component={AdminComp}></Route>
           </Switch>
         </div>
         <FooterComp />

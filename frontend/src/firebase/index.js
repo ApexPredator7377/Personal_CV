@@ -2,14 +2,14 @@ import firebase from "firebase/app";
 import "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyByi_qvaS4EzmWHh3S5szJssA6f48QbCOI",
-    authDomain: "photo-nest.firebaseapp.com",
-    projectId: "photo-nest",
-    storageBucket: "photo-nest.appspot.com",
-    messagingSenderId: "32175093849",
-    appId: "1:32175093849:web:036816af6be1d8ef539948",
-    measurementId: "G-0E5NDS11FW"
-  };
+  apiKey: "AIzaSyAF9P8zIsCzRiFSd0yDJwieyMBnZJRxlmI",
+  authDomain: "cv-nathan.firebaseapp.com",
+  projectId: "cv-nathan",
+  storageBucket: "cv-nathan.appspot.com",
+  messagingSenderId: "950965509625",
+  appId: "1:950965509625:web:aee7cf91c36bb6f321f128",
+  measurementId: "${config.measurementId}"
+};
 
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();

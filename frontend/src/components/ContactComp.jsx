@@ -96,7 +96,7 @@ export default class ContactComp extends Component {
         </div>
         </div>
 
-        {/* <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/> */}
+        <MessengerCustomerChat pageId="100008799936212" appId="921688632059100"/>
 
         <p></p>
       </>
